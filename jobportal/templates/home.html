@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f7fb;
+        }
+
+        nav{
+            background:#111827;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 50px;
+        }
+
+        nav h2{
+            font-size:32px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:30px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        .hero{
+            background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+            color:white;
+            text-align:center;
+            padding:120px 20px;
+        }
+
+        .hero h1{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:24px;
+            margin-bottom:30px;
+        }
+
+        .hero a{
+            background:white;
+            color:#203a43;
+            padding:15px 30px;
+            text-decoration:none;
+            border-radius:10px;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        .search-box{
+            text-align:center;
+            padding:40px;
+            background:white;
+        }
+
+        .search-box input{
+            width:60%;
+            padding:15px;
+            font-size:18px;
+            border:2px solid #ccc;
+            border-radius:10px;
+        }
+
+        .jobs{
+            padding:50px;
+            text-align:center;
+        }
+
+        .jobs h2{
+            font-size:40px;
+            margin-bottom:40px;
+        }
+
+        .job-cards{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:white;
+            width:300px;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .card h3{
+            color:#203a43;
+            margin-bottom:15px;
+        }
+
+        .card p{
+            margin:10px 0;
+            font-size:17px;
+        }
+
+        .card a{
+            display:inline-block;
+            margin-top:15px;
+            background:#203a43;
+            color:white;
+            padding:10px 20px;
+            text-decoration:none;
+            border-radius:8px;
+        }
+
+        .about{
+            background:#e5e7eb;
+            padding:60px;
+            text-align:center;
+        }
+
+        .about h2{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+
+        .about p{
+            font-size:20px;
+            width:70%;
+            margin:auto;
+        }
+
+        .contact{
+            padding:60px;
+            text-align:center;
+            background:white;
+        }
+
+        .contact h2{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+
+        footer{
+            background:#111827;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Job Portal</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/apply/">Apply</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Find Your Dream Job</h1>
+        <p>Apply for top companies with our professional job portal</p>
+        <a href="/apply/">Apply Now</a>
+    </section>
+
+    <section class="search-box">
+        <input type="text" placeholder="Search jobs...">
+    </section>
+
+    <section class="jobs" id="jobs">
+        <h2>Available Jobs</h2>
+
+        <div class="job-cards">
+            <div class="card">
+                <h3>Python Developer</h3>
+                <p>Company: Infosys</p>
+                <p>Location: Noida</p>
+                <p>Salary: ₹40,000/month</p>
+                <a href="/apply/">Apply Now</a>
+            </div>
+
+            <div class="card">
+                <h3>Web Designer</h3>
+                <p>Company: TCS</p>
+                <p>Location: Delhi</p>
+                <p>Salary: ₹30,000/month</p>
+                <a href="/apply/">Apply Now</a>
+            </div>
+
+            <div class="card">
+                <h3>Data Analyst</h3>
+                <p>Company: Wipro</p>
+                <p>Location: Gurgaon</p>
+                <p>Salary: ₹50,000/month</p>
+                <a href="/apply/">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            We help students and professionals find the best jobs in top companies.
+            Our job portal makes job searching easy and fast.
+        </p>
+    </section>
+ 
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@jobportal.com</p>
+        <p>Phone: +91 9876543210</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Job Portal | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
